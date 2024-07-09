@@ -12,7 +12,7 @@ function Hero() {
     <div className='hcontent'>
         
         <p className='name'>Hello I m </p>
-        <p className='heading'>I m a budding React developer.</p>
+        <p className='heading'>I m a budding Full-Stack developer.</p>
         <p className='content'>I excel at crafting elegant digital experiences and I am proficient in various programming languages and technologies. </p>
         <br></br>
         
