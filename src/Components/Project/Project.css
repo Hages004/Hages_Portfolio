@@ -1,0 +1,23 @@
+.p-container{
+    padding: 5% 10%;
+    margin: 4rem 0;
+    position: relative;
+}
+.p-container h5{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 3.5rem;
+}
+.p-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+}
+/*@media (max-width:1024px){
+    .p-content{
+        margin-left: 14%;
+    }
+}*/

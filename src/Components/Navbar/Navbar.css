@@ -1,0 +1,140 @@
+*{
+    padding: 0%;
+    margin: 0%;
+  }
+  .header{
+    top: 0;
+    background: transparent;
+    z-index: 30;
+    backdrop-filter: blur(100px);
+    position: sticky;
+    padding: 0% 10% ;/*Top Left Bottom Right*/
+  }
+    .port {
+      
+      font-weight: 400;
+      font-style: normal;
+      font-size: 250%;
+      margin-left:1%;
+    }
+    .ulist {
+     display: flex;
+     align-items: center;
+     gap: 1rem;
+     list-style: none;
+    }
+    .list{
+      margin: 0 1.5rem;
+      cursor: pointer;
+    }
+    .items{
+      display: flex;
+      justify-content: space-between;
+    }
+    .container{
+      display: flex;
+      justify-content:space-between;
+      align-items: center;
+      /*padding: 1rem 0;*/
+      margin: 0 auto;
+    }
+    .list{
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      font-size: 80%;
+      cursor: pointer;
+      position: relative;
+    }
+    .list::before{
+      content: " ";
+      width: 1px;
+      height: 2.5px;
+      background: linear-gradient(90deg,#7e61e7,#a993fe);
+      border-radius: 0.5rem;
+      position: absolute;
+      bottom: -0.6rem;
+      opacity: 0;
+      transform: translateX(-1.5rem);
+      transition:all 0.3s ease;
+    }
+    .list:hover::before{
+      width: 100%;
+      transform: translateX(0);
+      opacity:1;
+    }
+    .hmbtn{
+      font-size: 500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 25px 10px 25px;
+      background: linear-gradient(90deg,#7e61e7,#a993fe);
+      border-width: 1px;
+      border-radius: 3px;
+      border: none;
+      outline: 1.5px solid transparent;
+      transition: all 0.3s ease;
+    }
+    .hmbtn:hover{
+      box-shadow: 0 0 10px;
+      color: #ac97fa;
+      background: transparent;
+      border-color:#ac97fa;
+      font-size:600 ;
+      font-weight: 100px;
+    }
+    .Menubtn{
+      width: 2.5rem;
+      height:2.5rem;
+      background:linear-gradient( 90deg, #7e61e7 0%,#a993fe 100%);
+      border: none;
+      border-radius: 3px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      display: none;
+    }
+    .Menubtn:hover{
+      box-shadow: 0 0 10px;
+      color: #ac97fa;
+      background: transparent;
+      border-color:#ac97fa;
+    }
+    button.Menu{
+      width: 2.5rem;
+      height:2.5rem;
+      background:linear-gradient( 90deg, #7e61e7 0%,#a993fe 100%);
+      border: none;
+      border-radius: 3px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      display: none;
+    }
+    button.Menu:hover{
+      box-shadow: 0 0 10px;
+      color: #ac97fa;
+      background: transparent;
+      border-color:#ac97fa;
+    }
+    @media (max-width:875px){
+      .Menubtn{
+        display: block;
+      }
+      .ulist{
+        display: none;
+    }
+    .port{
+      font-size: 35px;
+    }
+    
+  }
+  @media (max-width:425px)
+  {
+    .port{
+      font-size: 35px;
+    }
+  }
+  
+  
+  
+  
+  

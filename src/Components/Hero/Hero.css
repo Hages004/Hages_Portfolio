@@ -1,0 +1,225 @@
+.himg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height: 100%;
+    width:100%;
+    border-radius: 50%; 
+}
+.box{
+    position: relative;
+    background-color: rgb(16, 8, 47);
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+    overflow: hidden;  
+}
+.box::before{
+    content: " ";
+    position: absolute;
+    inset: -10px 140px;
+    background:linear-gradient(356deg,rgb(69, 12, 174),#e3ddf9);
+    transition: 0.5s ;
+    animation: animation 4s linear infinite   ;
+}
+.box:hover::before{
+    inset: -10px -10px;
+}
+@keyframes animation{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.box::after{
+    content: " ";
+    position: absolute;
+    background-color: rgb(16, 8, 47);
+    /*border: 3px solid black;*/
+    inset: 6px;
+    border-radius: 50%;
+    z-index: 1;
+}
+.imgcontainer{
+    position: absolute;
+    inset: 30px;
+    border: #000001 3px solid;
+    z-index: 3;
+    border-radius: 50%;
+}
+/*.imgcontainer::before{
+    content: " ";
+    height: 23rem;
+    width: 30rem;
+    position: absolute;
+    top: 7rem;
+    width:10rem;
+    border: #7e61e7 2px solid;
+    background:#7e61e7;
+    position: absolute;
+    z-index: -1;
+}*/
+/*.hcontainer::after, .hcontainer::before{
+    content: " ";
+    width: 28.125em;
+    height: 28.125em;
+    border-radius: 28.125em;
+    background:#7e61e7;
+    position: absolute;
+    z-index: -1;
+    filter: blur(500px);
+}*/
+.hcontainer::after{
+    top: 5rem;
+    left: -5rem;
+}
+.hcontainer::before{
+    bottom: 2rem;
+    right:2rem
+    
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.githubi, .linkedini{
+    color:linear-gradient( 90deg, #7e61e7 0%,#a993fe 100%);
+    border: none;
+    padding: 6px 10px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.githubi:hover,.linkedini:hover{
+    box-shadow: 0 0 10px;
+    color: #ac97fa;
+    background:rgb(8, 4, 25);
+    border-color:#ac97fa;
+    font-size:600 ;
+    font-weight: 100px;
+}
+.hcontainer{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 10% 0% 10%;
+}
+.name{
+    font-size: 50px;
+    font-weight: 700;
+    max-width: 10ch;
+}
+.name::after{
+    content: "HAGES SP";
+    color:#7e61e7;
+}
+.content{
+    max-width: 37ch;
+}
+.dot{
+    color: rgb(174, 91, 247);
+    font-weight: 970;
+}
+.resume{
+    background:linear-gradient( 90deg, #7e61e7 0%,#a993fe 100%);
+    border: none;
+    padding: 10px 30px ;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.resume:hover{
+    box-shadow: 0 0 10px;
+    color: #ac97fa;
+    background:rgb(8, 4, 25);
+    border-color:#8464f8 solid 2em;
+    font-size:600 ;
+    font-weight: 100px;
+  }
+  .projects{
+    max-width: 12ch;
+    text-align: center;
+    margin-top: 12px;
+  }
+  .technologies{
+    max-width: 10ch;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 12px;
+  }
+  .no{
+    font-size: 50px;
+    color: #7e61e7;
+  }
+.footer{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
+    margin-top:40px;
+}
+.fpro{
+    display: flex;
+    flex-direction: row;
+    
+}
+.heading{
+    text-transform:uppercase;
+    font-size: 20px;
+    color:linen;
+    font-style: bold;
+    gap: 2.5px;
+}
+.fts{
+    display: flex;
+    flex-direction: row;
+}
+ @media (max-width:875px) {
+    .hcontainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5% 10% 0% 10%;
+    }
+    .box{
+        height: 350px;
+        width:350px;
+        border-radius: 50%; 
+    }
+    .box::before{
+        content: " ";
+        position: absolute;
+        inset: -10px 100px;
+        background:linear-gradient(356deg,rgb(69, 12, 174),#e3ddf9);
+        transition: 0.5s ;
+        animation: animation 4s linear infinite   ;
+    }
+    .box::after{
+        content: " ";
+        position: absolute;
+        background-color: rgb(16, 8, 47);
+        /*border: 3px solid black;*/
+        inset: 6px;
+        border-radius: 50%;
+        z-index: 1;
+    }
+    .heading{
+        font-size: 18px;
+        text-align: center;
+    }
+    .name{
+        font-size: 50px;
+        font-weight: 700;
+        max-width: 20ch;
+        text-align: center;
+    }
+    .content{
+        max-width: 50ch;
+        text-align: center;
+    }
+ }
+ 

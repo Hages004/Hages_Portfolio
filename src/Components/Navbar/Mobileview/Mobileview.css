@@ -1,0 +1,41 @@
+.Mobile-menu{
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    background-color: transparent;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999 !important;
+    opacity: 0;
+    box-shadow: rgb(16, 8, 47);
+    transition: all 0.5s ease;
+    transform: translateX(-100vh);
+}
+.Mobile-menu-container{
+    width: 40vh;
+    height: 100vh;
+    /*background-color: rgb(16, 8, 47);*/
+    backdrop-filter: blur(100px);
+    padding: 2rem ;
+
+}
+.Mobile-menu.active{
+    opacity: 1;
+    transform: translateX(0);
+}
+.Mobile-menu p{
+    margin-bottom: 3rem;
+}
+.Mobile-menu .ulist{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style: none;
+    margin-left: -2rem;
+}
+@media (max-width:875px){
+    .Mobile-menu{
+        display: block;
+    }
+}
