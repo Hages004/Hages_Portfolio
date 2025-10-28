@@ -1,0 +1,102 @@
+.c-container{
+    padding: 5% 10%;
+}
+.c-container h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 3.5rem;
+}
+.c-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.c-content1{
+    border: 1.5px solid #6751b9;
+    border-radius: 5px;
+    width: 23rem;
+    height: 27.5rem;
+    padding:3%;
+}
+input ,textarea{
+    background: transparent;
+    border: 1.5px solid #6751b9;
+    width: 22.2rem;
+    height: 2.5rem;
+    margin-bottom: 1rem;
+    padding-left: 10px;
+}
+input::placeholder{
+    color:white;
+    padding-left: 1rem;
+}
+textarea::placeholder{
+    color:white;
+    padding: 2% 3% 2% 3.5%;
+}
+textarea{
+    width: 22.2rem;
+    height: 6rem;
+    padding-top: 10px;
+}
+.head{
+    font-size: 1.5rem;
+    padding-bottom:5% ;
+}
+.c-content1 p{
+    padding-bottom:5% ;
+}
+.send{
+    background: linear-gradient(49deg, #6751b9,#a993f7);
+    border: 1.5px solid #6751b9;
+    width: 23rem;
+    height: 2.5rem;
+    cursor: pointer;
+}
+.c-content2{
+    padding:3%;
+    margin-top: 3rem;
+}
+.phone,.em,.li,.gh{
+    margin: 1.5rem;
+  color: #a993f7;
+}
+@media (max-width:873px){
+    .c-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    } 
+}
+@media (max-width:558px){
+    .c-content1{
+        border: 1.5px solid #6751b9;
+        border-radius: 5px;
+        width: 20rem;
+        height: 26rem;
+        padding:3%;
+    }
+    input ,textarea{
+        background: transparent;
+        border: 1.5px solid #6751b9;
+        width: 20rem;
+        height: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    .send{
+        background: linear-gradient(49deg, #6751b9,#a993f7);
+        border: 1.5px solid #6751b9;
+        width: 20rem;
+        height: 2.5rem;
+        cursor: pointer;
+    }
+}
+@media (max-width:558px){
+input,textarea{
+    width: 19.3rem;
+}
+}
+
+
+
